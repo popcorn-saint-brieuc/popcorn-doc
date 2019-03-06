@@ -22,7 +22,6 @@ _Popcorn_ est une plateforme open source et (vraiment) sans frais ni commission 
 - Gestion des profils de freelance et de pages statiques
 - Recherche instantanée sur les compétences et mot-clefs du profils
 - SEO-friendly avec la prégénération du html et les tags pour les réseaux sociaux (Facebook, Twitter, Linkedin)
-- Support Gravatar pour les photos du profil
 - Un formulaire de contact qui envoie le message sur le channel #general d'un Slack
 - Une page qui affichent tous les autres popcorns francophones
 
@@ -50,19 +49,29 @@ Les fichiers markdowns sont convertis en fichier JSON via le module Nuxt [Gustav
 
 Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](https://pages.github.com/).
 
----
+## Créer son propre _Popcorn_
 
-### Comment créer son propre _Popcorn_
+#### Installation
 
-- Télécharge le popcorn-starter
-- Renomme le fichier .env.example, renomme le en .env avec les valeurs qui correspondent à ton Popcorn.
-- Installe puis démarre le Popcorn avec `npm install` puis `npm run dev`
-- Recherche toutes les occurences de `{{MON_POPCORN}}` et `{{MA_LOCALITE}}` pour les remplacer par les valeurs de ton Popcorn.
-- Si tu veux déployer ton site avec Travis sur Github, il faudra connecter l'application Travis à Github et renseigner la variable GITHUB_TOKEN.
-- _N'oublie pas de renseigner sur Travis ou autre toutes les variables présentes dans le fichier .env.example_
-- N'hésite pas à nous contacter si tu as besoin d'aide, en ouvrant une issue sur ce dépôt.
+- [Créer un organisation](https://help.github.com/en/articles/creating-a-new-organization-from-scratch) pour ton _Popcorn_ sur Github (https://github.com/{{MON_POPCORN}} ).
+- Forke le dépot [popcorn-starter](https://github.com/popcorn-nantes/popcorn-starter) dans ton organisation https://github.com/{{MON_POPCORN}}.
+- Clone et renomme ce dépot https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}.
+- Renomme le fichier .env.example en .env avec les valeurs qui correspondent à ton _Popcorn_.
+- Recherche toutes les occurences de `{{MON_POPCORN}}` et `{{MA_LOCALITE}}` pour les remplacer par les valeurs de ton _Popcorn_.
 
-- tu pourra sensuite ajouter ton popcorn a l'annuaire et ajouter des profil a ton procorn
+#### Démarrage
+
+- Installe les dépendances avec `npm install` puis démarre le serveur local de dev avec `npm run dev`.
+- Ajoute ton [profil](https://github.com/popcorn-nantes/popcorn-starter/blob/master/README.md#ajoute-son-profil) a ton _Popcorn_.
+- Génère la version statique de ton site avec `npm run generate`.
+
+#### Déploiement
+
+- Pour déployer ton site avec [Travis](https://travis-ci.com/) sur Github, il faudra connecter l'[application Travis](https://github.com/apps/travis-ci) à Github.
+- Renseigner les variables POPCORN_BASE_URL et GITHUB_TOKEN dans les "Environment Variables" de l'application Travis connecté a ton dépot https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}.
+- Merger la branche `master` dans la branche `published` de ton dépot.
+
+**Le déploiement du site est déclenché automatiquement par Travis lors d'un `git push` sur la branche `published`. (Il peut prendre quelques minutes avant d'être visible en production.)**
 
 #### Tests
 
@@ -79,3 +88,11 @@ npm run e2e
 # Lancer la suite de tests en ouvrant un chrome (recommandé pour le debug)
 npm run e2e:open
 ```
+
+#### Annuaire
+
+- Finallement, [ajoutes ton _Popcorn_](https://github.com/popcorn-nantes/popcorn-machine) à l'[annuaire des _Popcorns_](https://popcorn-nantes.github.io/popcorns).
+
+---
+
+Si tu as besoin d'aide, n'hésite pas à nous contacter en ouvrant une issue sur ce dépôt.
