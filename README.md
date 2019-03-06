@@ -53,9 +53,9 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 
 #### Installation
 
-- [Créer un organisation](https://help.github.com/en/articles/creating-a-new-organization-from-scratch) pour ton _Popcorn_ sur Github (https://github.com/{{MON_POPCORN}} ).
-- Forke le dépot [popcorn-starter](https://github.com/popcorn-nantes/popcorn-starter) dans ton organisation https://github.com/{{MON_POPCORN}}.
-- Clone et renomme ce dépot https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}.
+- [Créer une organisation](https://help.github.com/en/articles/creating-a-new-organization-from-scratch) pour ton _Popcorn_ sur Github (`http://github.com/{{MON_POPCORN}}`).
+- Forke le dépot [popcorn-starter](https://github.com/popcorn-nantes/popcorn-starter) dans ton organisation `http://github.com/{{MON_POPCORN}}`.
+- Clone et renomme le dépot `http://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}`.
 - Renomme le fichier .env.example en .env avec les valeurs qui correspondent à ton _Popcorn_.
 - Recherche toutes les occurences de `{{MON_POPCORN}}` et `{{MA_LOCALITE}}` pour les remplacer par les valeurs de ton _Popcorn_.
 
@@ -68,10 +68,11 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 #### Déploiement
 
 - Pour déployer ton site avec [Travis](https://travis-ci.com/) sur Github, il faudra connecter l'[application Travis](https://github.com/apps/travis-ci) à Github.
-- Renseigner les variables POPCORN_BASE_URL et GITHUB_TOKEN dans les "Environment Variables" de l'application Travis connecté a ton dépot https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}.
+- Renseigner les variables POPCORN_BASE_URL et GITHUB_TOKEN dans les "Environment Variables" de l'application Travis connectée a ton dépot `https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}`.
 - Merger la branche `master` dans la branche `published` de ton dépot.
 
-**Le déploiement du site est déclenché automatiquement par Travis lors d'un `git push` sur la branche `published`. (Il peut prendre quelques minutes avant d'être visible en production.)**
+Le déploiement du site est déclenché automatiquement par Travis lors d'un `git push` sur la branche `published`.
+(Il peut prendre quelques minutes avant d'être visible en production.)
 
 #### Tests
 
@@ -93,6 +94,4 @@ npm run e2e:open
 
 - Finallement, [ajoutes ton _Popcorn_](https://github.com/popcorn-nantes/popcorn-machine) à l'[annuaire des _Popcorns_](https://popcorn-nantes.github.io/popcorns).
 
----
-
-Si tu as besoin d'aide, n'hésite pas à nous contacter en ouvrant une issue sur ce dépôt.
+**Si tu as besoin d'aide, n'hésite pas à nous contacter en ouvrant une issue sur ce dépôt.**
