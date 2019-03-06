@@ -54,7 +54,7 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 #### Installation
 
 - [Créer une organisation](https://help.github.com/en/articles/creating-a-new-organization-from-scratch) pour ton _Popcorn_ sur Github (`http://github.com/{{MON_POPCORN}}`).
-- Forke le dépot [popcorn-starter](https://github.com/popcorn-nantes/popcorn-starter) dans ton organisation `http://github.com/{{MON_POPCORN}}`.
+- Forke le dépot [popcorn-starter](https://github.com/popcorn-nantes/popcorn-starter) dans ta nouvelle organisation `http://github.com/{{MON_POPCORN}}`.
 - Clone et renomme le dépot `http://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}`.
 - Renomme le fichier .env.example en .env avec les valeurs qui correspondent à ton _Popcorn_.
 - Recherche toutes les occurences de `{{MON_POPCORN}}` et `{{MA_LOCALITE}}` pour les remplacer par les valeurs de ton _Popcorn_.
