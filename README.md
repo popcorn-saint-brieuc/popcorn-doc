@@ -70,6 +70,7 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 - Pour déployer ton site avec [Travis](https://travis-ci.com/) sur Github, il faudra connecter l'[application Travis](https://github.com/apps/travis-ci) à Github.
 - Renseigner les variables POPCORN_BASE_URL et GITHUB_TOKEN dans les "Environment Variables" de l'application Travis connectée a ton dépot `https://github.com/{{MON_POPCORN}}/{{MON_POPCORN}}`.
 - Merger la branche `master` dans la branche `published` de ton dépot.
+- Créer un dépot de type `{{MON_POPCORN}}/{{MON_POPCORN}}.github.io` qui contiendra le code statique compilé de votre _Popcorn_.
 
 Le déploiement du site est déclenché automatiquement par Travis lors d'un `git push` sur la branche `published`.
 (Il peut prendre quelques minutes avant d'être visible en production.)
