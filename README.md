@@ -92,6 +92,8 @@ npm run e2e:open
 
 #### Annuaire
 
-- Finallement, [ajoutes ton _Popcorn_](https://github.com/popcorn-nantes/popcorn-machine) à l'[annuaire des _Popcorns_](https://popcorn-nantes.github.io/popcorns).
+- Finallement, [ajoute ton _Popcorn_](https://github.com/popcorn-nantes/popcorn-machine) à l'[annuaire des _Popcorns_](https://popcorn-nantes.github.io/popcorns).
+
+---
 
 **Si tu as besoin d'aide, n'hésite pas à nous contacter en ouvrant une issue sur ce dépôt.**
