@@ -62,7 +62,7 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 #### Démarrage
 
 - Installe les dépendances avec `npm install` puis démarre le serveur local de dev avec `npm run dev`.
-- Ajoute ton [profil](https://github.com/popcorn-nantes/popcorn-starter/blob/master/README.md#ajoute-son-profil) a ton _Popcorn_.
+- Créer ton [profil](https://github.com/popcorn-nantes/popcorn-starter/blob/master/README.md#créer-son-profil) a ton _Popcorn_.
 - Génère la version statique de ton site avec `npm run generate`.
 
 #### Déploiement
