@@ -14,7 +14,8 @@ _Popcorn_ est une plateforme open source et (vraiment) sans frais ni commission 
 - _Popcorn_ est une [association à but non-lucratif](https://opencollective.com/popcorn) et ne prélève pas de commission.
 - _Popcorn_ est réservé aux **développeur·e·s de {{MA_LOCALITE}}**.
 - _Popcorn_ est développé et maintenu par les développeur(e)s freelances eux-mêmes.
-- _Popcorn_ n'est **pas** un intermédiaire ou une entreprise: les clients entrent directement en contact avec les freelances. _Popcorn_ ne joue aucun rôle dans les échanges qui suivent ensuite entre les deux parties.
+- _Popcorn_ n'est **pas** un intermédiaire ou une entreprise: les clients entrent directement en contact avec les freelances.
+- _Popcorn_ ne joue aucun rôle dans les échanges qui suivent ensuite entre les deux parties.
 
 ## Les fonctionnalités
 
@@ -43,13 +44,15 @@ L'idée expérimentée par _Popcorn_ est d'avoir un site aussi léger techniquem
 
 ## La technique
 
-`popcorn-machine` est une application [Nuxt.js](https://github.com/nuxt/nuxt.js) qui permet de générer un site statique en _html_ à partir de fichiers markdowns pour créer les profils et contenus du sites.
+La `popcorn-machine` est une application [Nuxt.js](https://github.com/nuxt/nuxt.js) qui permet de générer un site statique en _html_ à partir de fichiers markdowns pour créer les profils et contenus du sites.
 
 Les fichiers markdowns sont convertis en fichier JSON via le module Nuxt [Gustave](https://github.com/yann-yinn/nuxt-gustave). Ce sont ces fichiers JSON qui sont ensuite consommés par les composants Vue.js.
 
 Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](https://pages.github.com/).
 
-### Comment créer sons propre _Popcorn_
+---
+
+### Comment créer son propre _Popcorn_
 
 - Télécharge le popcorn-starter
 - Renomme le fichier .env.example, renomme le en .env avec les valeurs qui correspondent à ton Popcorn.
@@ -61,7 +64,7 @@ Le tout est ensuite exportable en _html_ et hébergeable sur [github pages](http
 
 - tu pourra sensuite ajouter ton popcorn a l'annuaire et ajouter des profil a ton procorn
 
-### Tests
+#### Tests
 
 Cypress est utilisé pour tester le site. Pour lancer les tests, il faut d'abord démarrer le projet de test qui sera lancé sur le port `44000`
 
